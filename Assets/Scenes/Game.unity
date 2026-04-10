@@ -765,6 +765,7 @@ GameObject:
   - component: {fileID: 1489140387}
   - component: {fileID: 1489140390}
   - component: {fileID: 1489140389}
+  - component: {fileID: 1489140391}
   m_Layer: 0
   m_Name: CarController
   m_TagString: Untagged
@@ -924,6 +925,23 @@ WheelJoint2D:
   m_Motor:
     m_MotorSpeed: 0
     m_MaximumMotorForce: 10000
+--- !u!114 &1489140391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489140385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcd4ad852519db44e9369d7ffab1ea92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _frontTireRB: {fileID: 1677753564}
+  _carRB: {fileID: 1489140387}
+  _backTireRB: {fileID: 1918910745}
+  _speed: 150
+  _rotationSpeed: 300
 --- !u!1 &1673592123
 GameObject:
   m_ObjectHideFlags: 0
@@ -1913,7 +1931,7 @@ GameObject:
   - component: {fileID: 1677753562}
   - component: {fileID: 1677753564}
   m_Layer: 0
-  m_Name: Tire_0 (1)
+  m_Name: FrontTire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2065,7 +2083,7 @@ GameObject:
   - component: {fileID: 1918910743}
   - component: {fileID: 1918910745}
   m_Layer: 0
-  m_Name: Tire_0
+  m_Name: BackTire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
